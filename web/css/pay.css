@@ -1,0 +1,83 @@
+.row {
+    margin-bottom: 16px;
+}
+
+.row label {
+    display: block;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+
+}
+
+
+.row input[type="text"],
+.row input[type="email"],
+.row textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: none;
+}
+
+.product-info{
+    flex: 1;
+    padding: 1rem;
+
+}
+.product-form{
+    min-width: 360px;
+    padding: 1rem;
+}
+
+.product-info .item{
+    display: flex;
+    justify-content: end;
+    margin: 8px 4px;
+    align-items: center
+    
+}
+.product-info .item >*{
+    padding: 8px;
+}
+.product-info .item >*:nth-child(3){
+    width : 22%;
+}
+.product-info .item >*:nth-child(2){
+    width : 50%;
+}
+.product-info .item >*:nth-child(1){
+    flex: 1;
+}
+.product-info .img{
+    height: 72px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    background-size: cover;
+}
+
+@media screen and (max-width: 960px){
+    .main{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .product-info{
+        padding: 8px;
+    }
+    .item{
+        font-size: 13px;
+    }
+    
+}
+.total{
+    border: 1px solid var(--red);border-radius: 8px; margin-top: 1rem; text-align: end; padding: 1rem
+}
+.total .num{
+    font-size: 24px; color: var(--red); font-weight: bold; margin: .5rem;
+}

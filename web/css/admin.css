@@ -1,0 +1,245 @@
+.admin{
+    padding: 48px 0;
+    padding-top: 24px;
+    display: flex;
+}
+.admin h4,.title{
+    color: var(--red);
+}
+.admin .option{
+    width: 100%;
+    text-align: start;
+    padding: 12px;
+    font-weight:600;
+    color: #666;
+    border-radius: 8px 0 0 8px;
+    background: transparent;
+    text-transform: uppercase;
+    opacity: .8;
+}
+.admin .option:hover{
+    cursor: pointer;
+    color: var(--red);
+    background: rgb(240,240,240);
+    opacity: 1
+}
+.admin .option .icon{
+    display: inline-block;
+    width: 22px;
+}
+.admin .option.selected{
+    background: rgb(220,220,220);
+    color: var(--red);
+    cursor: initial;
+    opacity: 1
+}
+.left-bar{
+    width: 160px;
+    height: 100%;
+    position: sticky;
+    top:90px;
+}
+.admin .main{
+    flex-grow: 1;
+    background: rgb(220,220,220);
+}
+
+
+/*item*/
+.main .item{
+    max-width: 95%;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+.main .image{
+    width: 25%;
+}
+.main .image img{
+    width: 40px;
+}
+.main .price , .main .amount{
+    font-size: 16px;
+    max-width: 76px;
+    text-align: center;
+    padding: 8px 4px;
+    margin: 0 4px;
+}
+.main .edit{
+    width: 15%;
+}
+.main .edit button{
+    margin: 0 8px;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.main .edit button:nth-child(1){
+    background: #47d864;
+}
+.main .edit button:nth-child(2){
+    background: #ff3a25;
+}
+#edit-container, #add-container{
+    /*display:flex;*/
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top:80px;
+    bottom:0;
+    right:0;
+    left:0;
+    background: rgba(0,0,0,.5);
+    font-size: 14px;
+}
+.edit-field, .add-field{
+    margin-bottom: 80px;
+    min-width: 360px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: rgba(255,255,255,.9);
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+.edit-field label, .add-field label{
+    margin-top: 8px;
+}
+.edit-field input, .add-field input, .add-field select{
+    padding: 4px;
+}
+.edit-field .buttons, .add-field .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px 0;
+}
+.edit-field button, .add-field button{
+    justify-self: center;
+    max-width: 30%;
+    min-width: 150px;
+}
+.add-field .category-tag{
+    font-size: 13px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 2px 4px;
+    cursor: pointer;
+    display: inline-flex;
+    background-color: #fff;
+}
+option{
+    padding: 4px;
+    cursor: pointer
+}
+/**/
+.searchbar{
+    margin: 0 auto;
+    margin-top: 16px;
+}
+/**/
+.row{
+    padding: 4px;
+    margin-top: 24px;
+    margin-bottom: .75rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    min-width: 20%;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 0 4px #000;
+    background-color: #fff;
+    padding: 8px;
+    color: #fff;
+    --red1: #264653;
+    --red2: #2a9d8f;
+    --red3: #e9c46a;
+    --red4: #f4a261;
+    --red5: #e76f51;
+}
+.card .label{
+    font-size: .9rem
+}
+.card .value{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.25rem
+}
+
+.row .card:nth-child(1){
+    background-image: linear-gradient(to right,var(--red1), var(--red2));
+}
+.row .card:nth-child(2){
+    background-image: linear-gradient(to right, var(--red2), var(--red3));
+
+}
+.row .card:nth-child(3){
+    background-image: linear-gradient(to right, var(--red3), var(--red4));
+    color: #333;
+}
+.row .card:nth-child(4){
+    background-image: linear-gradient(to right, var(--red4), var(--red5));
+    color: #333;
+}
+.box-shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2), 0px 6px 6px rgba(0, 0, 0, 0.2);
+}
+/*ANALYTICS */
+
+#ColumnChart{
+    background-color: white;
+}
+
+.product-container .product{
+    background-color: #fff;
+    box-shadow: 0 0 4px #000;
+}
+.product img{
+    width: 124px;
+    height: unset !important;
+}
+.bookChart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#topBook{
+    font-size: .9rem;
+    display: block;
+    margin: auto;
+}
+.note{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*DELIVERY*/
+  table {
+    width: 100%;
+    max-width: 1190px;
+    border-collapse: collapse;
+    border: 1px solid #333;
+  }
+
+  th,td {
+    padding: 8px;
+    border: 1px solid #333;
+  }
+  th{
+      text-align: center
+  }
+  td{
+      background-color: #fff;
+      word-wrap: break-word;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }

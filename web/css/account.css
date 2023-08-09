@@ -1,0 +1,126 @@
+@import url("./globalStyle.css");
+
+/*ACCOUNT*/
+#account{
+    display: flex;
+}
+.card{
+   border-radius: 4px;
+   box-shadow: 0 0 4px black; 
+   padding: 1.5rem;
+}
+.user-info{
+    position: sticky !important;
+    top: 80px;    
+}
+.user-info > *{
+    margin-bottom: 8px;
+}
+.edit-btn{
+    position: absolute;
+    font-size: 1.5rem;
+    right: 1rem; top: 1rem;
+    cursor: pointer;
+}
+.edit-btn:hover{
+    color: var(--info)
+}
+.avatar{
+    display: inline-block;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden !important;
+}
+.avatar img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+}
+.order-info{
+    padding: 1.5rem;
+    flex:1;
+}
+.order-info > *{
+    margin-bottom: 1rem
+}
+.chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay{
+    display: none;
+    justify-content: center; align-items: center;
+    position: fixed;
+    top:80px;left:0;right:0;bottom:0;
+    background-color: rgba(0,0,0,.5);
+}
+.edit-container{
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.edit-container table{
+    border-spacing: 8px;
+}
+.edit-container input{
+    padding: 8px;
+    display: inline-block;
+    width: 100%;
+}
+/*LOGIN*/
+.main form{
+    max-width: 800px;
+    padding: 1rem 1.5rem;
+    margin: 0 1rem;
+    border: 1px solid rgba(51,51,51,0.4);
+    border-radius: 5px;
+}
+.main form input{
+    margin-bottom: 1rem;
+}
+.main form input:focus{
+    border: 1px solid #333;
+}
+.main form label{
+    display: block;
+}
+.main form label::after{
+    content:" *";
+    font-weight: bold;
+    color: var(--red);
+}
+.title{
+    margin-bottom: 1rem; 
+}
+.text{
+    padding:12px;
+    background-color: rgba(51,51,51,0.05);
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    max-width: 768px;
+}
+.alert-message, .account-exist{
+    display: block;
+    padding: 8px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: rgba(215,25,32,0.4);
+}
+.forget{
+    display: block;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.direct{
+    text-decoration: underline;
+    
+}
+.message{
+    color: var(--red);
+}
+
